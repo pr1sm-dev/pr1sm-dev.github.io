@@ -18,20 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Refractions
+title_separator: "|"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hello world! My name is pr1sm. I am a full-stack developer with an interest in security research, CTFs, and hacking. This blog hosts CTF writeups, HTB writeups, and anything else I find interesting.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://refraction.blog"
 
 # Build settings
-# theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minimal-mistakes-jekyll
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -59,3 +55,40 @@ plugins:
 repository: pr1sm-dev/pr1sm-dev.github.io
 paginate: 5
 paginate_path: /page:num/
+
+author:
+  name: "pr1sm"
+  avatar: "/assets/img/avatar.png"
+  bio: "Full-stack Developer & Independent security researcher"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://refractions.blog"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://gihtub.com/pr1sm-dev"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      author_profile: true
+      show_date: true
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+breadcrumbs: true
+search: true
+
+minimal_mistakes_skin: "dirt"
+locale: "en-US"
+
