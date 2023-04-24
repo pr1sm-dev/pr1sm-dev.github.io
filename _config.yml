@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Refractions
+title: Refraction
 title_separator: "|"
 description: >- # this means to ignore newlines until "baseurl:"
   Hello world! My name is pr1sm. I am a full-stack developer with an interest in security research, CTFs, and hacking. This blog hosts CTF writeups, HTB writeups, and anything else I find interesting.
@@ -66,7 +66,9 @@ author:
       url: "https://refractions.blog"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://gihtub.com/pr1sm-dev"
+      url: "https://github.com/pr1sm-dev"
+
+logo: "/assets/img/logo.png"
 
 # Defaults
 defaults:
@@ -85,6 +87,12 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 breadcrumbs: true
 search: true
