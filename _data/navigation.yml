@@ -1,3 +1,5 @@
 main:
-  - title: "About"
-    url: /about
+  - title: "CTF Writeups"
+    url: /ctf
+  - title: "HTB Writeups"
+    url: /htb
