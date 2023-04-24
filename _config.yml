@@ -26,8 +26,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://refraction.blog"
 
 # Build settings
-theme: minimal-mistakes-jekyll
-# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
